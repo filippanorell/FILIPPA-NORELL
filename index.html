@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiktivt Filmbolag</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <h2>Filtrering</h2>
+        <input type="text" placeholder="Sök..." />
+      </aside>
+      <section class="film-container">
+        <article
+          class="film"
+          onclick="showInfo('Film 1', '120 min', 'Action', 'En spännande actionfilm.', 2022)"
+        >
+          <h3>Film 1</h3>
+          <p>Längd: 120 min</p>
+          <p>Genre: Action</p>
+          <p>Utgivningsår: 2022</p>
+        </article>
+        <article
+          class="film"
+          onclick="showInfo('Film 2', '95 min', 'Drama', 'Ett rörande drama.', 2020)"
+        >
+          <h3>Film 2</h3>
+          <p>Längd: 95 min</p>
+          <p>Genre: Drama</p>
+          <p>Utgivningsår: 2020</p>
+        </article>
+        <!-- Lägg till fler filmer här -->
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Fiktivt Filmbolag</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
